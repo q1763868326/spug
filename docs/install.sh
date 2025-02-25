@@ -6,7 +6,7 @@
 set -e
 
 
-function spuy_banner() {
+function spug_banner() {
 
 echo "                           ";
 echo " ####  #####  #    #  #### ";
@@ -178,7 +178,7 @@ systemctl restart $SUPERVISOR_SRV
 }
 
 
-spuy_banner
+spug_banner
 init_system_lib
 install_spug
 setup_conf

@@ -78,7 +78,7 @@ export default observer(function () {
             valuePropName="checked"
             initialValue={store.record.is_public === undefined || store.record.is_public}
             tooltip={<a target="_blank" rel="noopener noreferrer"
-                        href="https://spug.cc/docs/conf-app">什么是公共/私有配置？</a>}>
+                        href="https://ops.spug.cc/docs/conf-app">什么是公共/私有配置？</a>}>
             <Switch checkedChildren="公共" unCheckedChildren="私有"/>
           </Form.Item>
         )}

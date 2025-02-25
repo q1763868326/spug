@@ -5,7 +5,7 @@
  */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Layout, Dropdown, Menu, Avatar } from 'antd';
+import { Layout, Dropdown, Menu, Avatar, Divider } from 'antd';
 import { MenuFoldOutlined, MenuUnfoldOutlined, UserOutlined, LogoutOutlined, CodeOutlined } from '@ant-design/icons';
 import { AuthDiv } from 'components';
 import Notification from './Notification';
@@ -41,22 +41,26 @@ export default function (props) {
 
   return (
     <Layout.Header className={styles.header}>
-      <div className={styles.left}>
-        <div className={styles.trigger} onClick={props.toggle}>
-          {props.collapsed ? <MenuUnfoldOutlined/> : <MenuFoldOutlined/>}
-        </div>
+      <div className={styles.trigger} onClick={props.toggle}>
+        {props.collapsed ? <MenuUnfoldOutlined/> : <MenuFoldOutlined/>}
       </div>
-      <Notification/>
-      <AuthDiv className={styles.terminal} auth="host.console.view|host.console.list" onClick={openTerminal}>
-        <CodeOutlined style={{fontSize: 16}}/>
-      </AuthDiv>
-      <div className={styles.user}>
-        <Dropdown overlay={UserMenu} style={{background: '#000'}}>
-          <span className={styles.action}>
-            <Avatar size="small" src={avatar} style={{marginRight: 8}}/>
-            {localStorage.getItem('nickname')}
-          </span>
-        </Dropdown>
+      <div className={styles.right}>
+        <div className={styles.link} onClick={() => window.open('https://spug.cc/')}>官网</div>
+        <div className={styles.link} onClick={() => window.open('https://ops.spug.cc/docs/about-spug/')}>文档</div>
+        <div className={styles.link} onClick={() => window.open('https://ssl.spug.cc/')}>证书申请</div>
+        <Divider type="vertical"/>
+        <Notification/>
+        <AuthDiv className={styles.terminal} auth="host.console.view|host.console.list" onClick={openTerminal}>
+          <CodeOutlined style={{fontSize: 16}}/>
+        </AuthDiv>
+        <div className={styles.user}>
+          <Dropdown overlay={UserMenu} style={{background: '#000'}}>
+            <span className={styles.action}>
+              <Avatar size="small" src={avatar} style={{marginRight: 8}}/>
+              {localStorage.getItem('nickname')}
+            </span>
+          </Dropdown>
+        </div>
       </div>
     </Layout.Header>
   )

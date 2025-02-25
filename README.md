@@ -6,15 +6,17 @@ Spug是面向中小型企业设计的轻量级无Agent的自动化运维平台�
 
 </div>
 
-- 官网地址：https://spug.cc
-- 使用文档：https://spug.cc/docs/about-spug/
-- 更新日志：https://spug.cc/docs/change-log/
-- 常见问题：https://spug.cc/docs/faq/
-- 推送助手：https://push.spug.cc
+- 公司官网：https://www.spug.cc
+- 项目官网：https://ops.spug.cc
+- 使用文档：https://ops.spug.cc/docs/about-spug/
 
 ## 演示环境
 
 演示地址：https://demo.spug.cc
+
+## 🔐免费通配符SSL证书
+免费通配符，付费证书价格亲民，性价比超高，低于市场其他平台价格，免费专家一对一配置服务，购买流程简单快速，且支持7天无理由退款和开具发票。提供一键下载和SSL过期通知配置，免费申请：[https://ssl.spug.cc](https://ssl.spug.cc)
+
 
 ## 🔥推送助手
 
@@ -44,9 +46,9 @@ Spug是面向中小型企业设计的轻量级无Agent的自动化运维平台�
 
 ## 安装
 
-[官方文档](https://spug.cc/docs/install-docker)
+[官方文档](https://ops.spug.cc/docs/install-docker)
 
-更多使用帮助请参考： [使用文档](https://spug.cc/docs/host-manage/)
+更多使用帮助请参考： [使用文档](https://ops.spug.cc/docs/host-manage/)
 
 
 ## 推荐项目
@@ -90,10 +92,10 @@ Spug是面向中小型企业设计的轻量级无Agent的自动化运维平台�
         </a>
       </th>
         <th align="center" style="width: 115px;">
-        <a href="https://www.aliyun.com/minisite/goods?userCode=8vdj3myc">
-          <img src="https://cdn.spug.cc/img/aliyun_quan.png" width="115px"><br>
-          <sub>阿里云通用券</sub><br>
-          <sub>300元限量免费领</sub>
+        <a href="https://www.aliyun.com/minisite/goods?userCode=bkj6b9tn">
+          <img src="https://cdn.spug.cc/img/aliyun-logo.png" width="115px"><br>
+          <sub>阿里云</sub><br>
+          <sub>2核心2G低至99元/年</sub>
         </a>
       </th>
       <th align="center" style="width: 125px;">

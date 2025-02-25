@@ -84,7 +84,7 @@ function ComTable() {
     title: '审核时间',
     className: S.min120,
     dataIndex: 'approve_at',
-    render: v => <Tooltip title={v}>{v ? moment(v).fromNow() : null}</Tooltip>,
+    hide: true
   }, {
     title: '发布人',
     className: S.min120,
@@ -94,8 +94,6 @@ function ComTable() {
     title: '发布时间',
     className: S.min120,
     dataIndex: 'do_at',
-    render: v => <Tooltip title={v}>{v ? moment(v).fromNow() : null}</Tooltip>,
-    hide: true
   }, {
     title: '备注',
     className: S.min120,
