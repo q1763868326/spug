@@ -266,8 +266,7 @@ def handle_user_info(handle_response, request, user, captcha):
 
     handle_response()
     x_real_ip = get_request_real_ip(request.headers)
-    token_isvalid = user.access_token and len(user.access_token) == 32 and user.token_expired >= time.time()
-    user.access_token = user.access_token if token_isvalid else uuid.uuid4().hex
+    user.access_token = user.access_token if user.access_token and len(user.access_token) == 32 else uuid.uuid4().hex
     user.token_expired = time.time() + settings.TOKEN_TTL
     user.last_login = human_datetime()
     user.last_ip = x_real_ip
